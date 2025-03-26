@@ -3,7 +3,7 @@ void main(){
   runApp(MyApp());
 }
 class MyApp extends StatelessWidget{
-  final List<String>ImagePath=[
+  final List<String>imagePath=[
     "assets/images/p1.jpg",
     "assets/images/p2.jpg",
     "assets/images/p3.jpeg",
@@ -23,18 +23,11 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(title: Text('GridView.extent widget',style: TextStyle(color: Colors.white,fontSize: 20),),centerTitle: true,backgroundColor: Colors.purple,),
-        body: Expanded(
-          // padding: EdgeInsets.all(10),
-          // margin: EdgeInsets.all(10),
-          // color: Colors.blueGrey,
-          child: Column(children: [
-            GridView.extent(maxCrossAxisExtent:500,
+        body:GridView.extent(maxCrossAxisExtent:450,
             crossAxisSpacing: 10,
             mainAxisSpacing: 10,
-      children: ImagePath.map((path) => Image.asset(path)).toList(),
-          ),
-          ],
-      ),
+      padding: EdgeInsets.all(5),
+      children: imagePath.map((path) => Image.asset(path)).toList(),
     ),
     ),
     );
