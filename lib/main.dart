@@ -9,6 +9,11 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(title: Text('GridView.extent widget',style: TextStyle(color: Colors.white,fontSize: 20),),centerTitle: true,backgroundColor: Colors.purple,),
+        body: Container(
+          padding: EdgeInsets.all(10),
+          margin: EdgeInsets.all(10),
+          color: Colors.blueGrey,
+        ),
 
       ),
     );
