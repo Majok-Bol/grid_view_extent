@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget{
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(title: Text('GridView.extent widget',style: TextStyle(color: Colors.white,fontSize: 20),),centerTitle: true,backgroundColor: Colors.purple,),
-        body:GridView.extent(maxCrossAxisExtent:450,
+        body:GridView.extent(maxCrossAxisExtent:250,
             crossAxisSpacing: 10,
             mainAxisSpacing: 10,
       padding: EdgeInsets.all(5),
